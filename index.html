@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Shahriar Ahmed - JavaScript Programming</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  
+  </head>
+
+  <body onload="quoteBox()">
+    <div class="container">
+        <h2 class="text"> JavaScript Website </h2>
+        <div class="container-2">
+            <h3 class="text-2"> Quote Box </h3>
+            <div style="display:flex">
+                <div id="quotes-box" class="quotes">
+                    <span id="quote"></span>
+                </div>
+                <div class="">
+                    <div onclick="styleChange('box-1')" class="box">
+                        <div class="box-1"></div>
+                    </div>
+                </div>
+                <div class="">
+                    <div onclick="styleChange('box-2')" class="box">
+                        <div class="box-2"></div>
+                    </div>
+                </div>
+                <div class="">
+                    <div onclick="styleChange('box-3')" class="box">
+                        <div class="box-3"></div>
+                    </div>
+                </div>
+                <div class="">
+                    <div onclick="styleChange('box-4')" class="box">
+                        <div class="box-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-converter">
+        <div class="container-2">
+            <h3 class="text-2"> Hero Converter </h3>
+        </div>
+
+        <div style="display:flex">
+            <div style="background-color: white; text-align:left; padding-top: 40px;" class="quotes">
+                <div class="converter">
+                    <label for="unit">Convert</label>
+                    <input style="width: 300px"type="text" id="unit" name="unit" value="1">
+                    <select name="converter" id="converter">
+                        <option value="KG_to_Pounds">KG to Pounds</option>
+                        <option value="Pounds_to_KG">Pounds to KG</option>
+                    </select>
+                    <input type="submit" value="Go" onclick="conversion(converter.value, unit.value)">
+                    <span id="output"> Output: 2.20462 Pounds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="place">
+        <h3 style="text-align:center; padding-top:20px;" class="msg"> Statistics Box </h3>
+        <div style="margin-right:auto; margin-left:auto;">
+            <table class="tg">
+                <tr>
+                    <td style="text-align:right"> Input series of Number &nbsp;</td>
+                    <td> <input onkeyup="produce()" type="text" id="bar" name="bar" value="12,12,22,9,1,20"> </td>
+                </tr><br>
+                <tr>
+                    <td style="text-align:right"> Max: &nbsp;</td>
+                    <td>
+                        <div id="max">22</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right"> Min: &nbsp;</td>
+                    <td>
+                        <div id="min">1</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right"> Sum: &nbsp;</td>
+                    <td>
+                        <div id="sum">76</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right"> Average: &nbsp;</td>
+                    <td>
+                        <div id="avg">12.666666666666667</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right"> Reverse Order: &nbsp;</td>
+                    <td>
+                        <div id="reverse">20,1,9,22,12,12</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="card">
+        <h1> Magic! </h1>
+
+        <div class="body">
+            <textarea id="magic" name="magic" rows="20" cols="160">
+                Sample Item 1
+                Sample Item 2
+                Sample Item 3
+                Sample Item 4
+
+                Sample Item 5
+                Sample Item 6
+
+
+                Sample Item 7
+            </textarea>
+        </div>
+
+        <div class="btn">
+            <button type="button" onclick="del()">Clear It</button>
+            <button type="button" onclick="cap()">Capitalize</button>
+            <button type="button" onclick="sort()">Sort</button>
+            <button type="button" onclick="reverse()">Reverse</button>
+            <button type="button" onclick="strip()">Strip Blank</button>
+            <button type="button" onclick="add()">Add Numbers</button>
+            <button type="button" onclick="shuffle()">Shuffle</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
